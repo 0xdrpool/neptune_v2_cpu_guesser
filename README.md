@@ -52,7 +52,10 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 1. **Download the Miner**  
    - Get the latest `ubuntu-dr_neptune_prover-x.x.x.tar.gz` from **[Download](https://github.com/0xdrpool/neptune_v2_cpu_guesser/blob/main/download.md)**
    ```bash
-   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu-dr_neptune_prover-2.0.0.tar.gz
+   # Ubuntu 20.04+
+   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-2.0.2.tar.gz
+   # Ubuntu 24.04 + AVX-512
+   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_24_avx512-dr_neptune_prover-2.0.2.tar.gz
    ```
      
 3. **Extract & Prepare**  
