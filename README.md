@@ -1,8 +1,12 @@
 # **Neptune V2 CPU Guesser**  
 
-The current version of ​drpool​ only supports ​CPU-based operation.
+**CPU + GPU ​Hardware Requirements**:​
 
-**​Hardware Requirements**:​
+- ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
+- CPU: Recommended ​32 cores or more.
+- GPU: 3070+
+
+**CPU ​Hardware Requirements**:​
 
 - ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
 - CPU: Recommended ​32 cores or more.
@@ -14,7 +18,7 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 
 ---
 
-## **📌 CPU Mining Tutorial**  
+## **📌 Mining Tutorial**  
 
 ### **1️⃣ Mining Pool Address**  
 ```bash
@@ -34,6 +38,12 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 ### **4️⃣ Register a DRPool Account​**  
 
 [drpool register](https://drpool.io/user/register)
+
+### **5️⃣ USE GPU（Option）**
+
+```bash
+./dr_neptune_prover -p stratum+tcp://neptune.drpool.io:30127 -w drpoolaccount.xxx -g 0
+```
 
 ---
 
@@ -70,11 +80,14 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 4. **Configure Your Account**  
    - Edit `inner_guesser.sh` and update your **[drpool](https://drpool.io) account name**.  
 
-5. **Start Mining**  
+5. **GPU Acceleration**
+   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g`
+
+7. **Start Mining**  
    ```bash
    ./start_guesser.sh
    ```
-6. **View Mining Logs:**
+8. **View Mining Logs:**
    ```bash
    tail -n 100 -f guesser.log
    ```
@@ -91,7 +104,7 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 
    The proof generation speed per second in the last minute
   
-7. **Stop Mining**
+9. **Stop Mining**
    ```bash
    ./stop_guesser.sh
    ```
