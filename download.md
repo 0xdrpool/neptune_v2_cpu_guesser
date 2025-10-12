@@ -2,6 +2,8 @@
 
 ## V3.1.0
 
+CPU+GPU proof generation achieves 5-10x speed acceleration.
+
 CPU + GPU
 
 **NPT**
