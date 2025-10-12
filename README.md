@@ -81,7 +81,7 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
    - Edit `inner_guesser.sh` and update your **[drpool](https://drpool.io) account name**.  
 
 5. **GPU Acceleration**
-   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g`
+   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g 0`
 
 7. **Start Mining**  
    ```bash
