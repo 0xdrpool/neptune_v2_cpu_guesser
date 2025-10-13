@@ -4,7 +4,7 @@
 
 - ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
 - CPU: Recommended ​32 cores or more.
-- GPU: 3070+
+- GPU: Nvidia
 
 **CPU ​Hardware Requirements**:​
 
