@@ -1,4 +1,13 @@
 # Download
+## V3.2.0
+- **3.2.0 CPU+GPU**:​ Compared to v3.1.0, it represents a 100%～200% improvement;
+
+
+CPU + GPU（option）
+
+**NPT**
+- **ubuntu 20**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.2.0.tar.gz
+- **ubuntu 24.04 avx512**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_24_avx512-dr_neptune_prover-3.2.0.tar.gz
 
 ## V3.1.0
 
