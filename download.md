@@ -2,8 +2,8 @@
 
 ## V3.2.1
 Part 1 Use GPU(Generate GuesserBuffer):
-	NVIDIA GeForce RTX 4070 Ti SUPER  28s
-	NVIDIA GeForce RTX 3090           43s
+-	NVIDIA GeForce RTX 4070 Ti SUPER  28s
+-	NVIDIA GeForce RTX 3090           43s
 
 <img width="1082" height="626" alt="image" src="https://github.com/user-attachments/assets/4ffaf4a3-b18a-424a-a243-89da744d1738" />
 
