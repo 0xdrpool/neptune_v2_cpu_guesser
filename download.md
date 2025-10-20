@@ -1,5 +1,40 @@
 # Download
 
+## V3.2.2
+
+Neptune Prover 3.2.2 GPU Operation Configuration Guide
+
+GPU Memory Classification and Startup Methods
+
+Based on single GPU memory size, configurations are divided into three categories:
+
+🚀 Category 1: High Memory Configuration (>40GB)
+- ​Memory Requirement: Single GPU memory greater than 40GB
+​- Multi-GPU Support: ✅ Supported
+​- CPU Configuration: 1 GPU corresponds to 1 CPU core
+​- Startup Parameter: `--gpulevel 0`
+
+⚡ Category 2: Medium Memory Configuration (>24GB)
+- ​Memory Requirement: Single GPU memory greater than 24GB
+​- Multi-GPU Support: ✅ Supported
+​- CPU Configuration: 1 GPU corresponds to 1 CPU core
+​- Startup Parameter: `--gpulevel 1`
+
+🔧 Category 3: Basic Memory Configuration (>4GB)
+- ​Memory Requirement: Single GPU memory greater than 4GB
+​- Multi-GPU Support: ✅ Supported
+​- CPU Dependency: ⚠️ Strong dependency on CPU performance
+​- Startup Parameter: `--gpulevel 2`
+- ​Performance Optimization: Adjust concurrent tasks via environment variable `export RUN_TASKS=n  # n × 4 must be less than GPU memory (GB)`
+
+Fix 64GB Memory Crash
+
+GPU
+
+**NPT**
+- **ubuntu 20**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.2.2.tar.gz
+
+
 ## V3.2.1
 Part 1 Use GPU(Generate GuesserBuffer):
 -	NVIDIA GeForce RTX 4070 Ti SUPER  28s
@@ -33,42 +68,3 @@ CPU + GPU（option）
 **NPT**
 - **ubuntu 20**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.1.0.tar.gz
 - **ubuntu 24.04 avx512**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_24_avx512-dr_neptune_prover-3.1.0.tar.gz
-
-
-## V2.1.0
-
-- **ubuntu_24_avx512-dr_neptune_prover-2.1.0.tar.gz**:​ Compared to v2.0.2, it represents a 90% improvement;
-- ⚠️⚠️⚠️ The device requires Ubuntu 24.04 with AVX512 instruction set support.
-
-CPU
-
-**NPT**
-- **ubuntu 24.04 avx512**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_24_avx512-dr_neptune_prover-2.1.0.tar.gz
-
-## V2.0.2
-
-- **ubuntu_20-dr_neptune_prover-2.0.2.tar.gz**:​ Compared to v2.0.0, it represents a 90% improvement; compared to v2.0.1, a 76% improvement.
-
-CPU
-
-**NPT**
-- **ubuntu 20**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-2.0.2.tar.gz
-
-
-## V2.0.1
-
-- **ubuntu_20-dr_neptune_prover-2.0.1.tar.gz**:​ There is a performance improvement.​​
-
-- **ubuntu_24_avx512-dr_neptune_prover-2.0.1.tar.gz**: increased by 118%​
-
-CPU
-
-**NPT**
-- **ubuntu 20**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-2.0.1.tar.gz
-
-## V2.0.0
-
-CPU
-
-**NPT**
-- ubuntu: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu-dr_neptune_prover-2.0.0.tar.gz
