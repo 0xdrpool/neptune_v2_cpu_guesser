@@ -1,5 +1,11 @@
 # Download
 
+## V3.2.3
+Fix High Memory Configuration (>40GB) Hash Error
+
+**NPT**
+- **ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.2.3.tar.gz
+
 ## V3.2.2
 
 Neptune Prover 3.2.2 GPU Operation Configuration Guide
