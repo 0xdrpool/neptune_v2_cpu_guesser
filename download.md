@@ -32,6 +32,7 @@ Based on single GPU memory size, configurations are divided into three categorie
 
 Fix 64GB Memory Crash
 
+GPU Performance Data
 -	NVIDIA GeForce RTX 3090 : 6.5 M
 -	NVIDIA GeForce RTX 4070 : 11.8 M
 
