@@ -32,7 +32,7 @@ Fix 64GB Memory Crash
 GPU
 
 **NPT**
-- **ubuntu 20**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.2.2.tar.gz
+- **ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.2.2.tar.gz
 
 
 ## V3.2.1
