@@ -1,5 +1,11 @@
 # Download
+## V3.2.4
+Fixed an issue with incorrect hash calculation on High Memory Configuration (>40GB) devices in V3.2.2.
 
+Users with GPU memory not exceeding 40GB do not need to upgrade.
+
+**NPT**
+- **ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.2.4.tar.gz
 
 ## V3.2.2
 
