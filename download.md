@@ -13,21 +13,21 @@ Based on single GPU memory size, configurations are divided into three categorie
 - ​Memory Requirement: Single GPU memory greater than 40GB
 - Multi-GPU Support: ✅ Supported
 - CPU Configuration: 1 GPU corresponds to 1 CPU core
-​- Startup Parameter: `--gpulevel 0`
+​- Startup Parameter: `-m 0`
 
 ⚡ Category 2: Medium Memory Configuration (>24GB)
 
 - ​Memory Requirement: Single GPU memory greater than 24GB
 - Multi-GPU Support: ✅ Supported
 - CPU Configuration: 1 GPU corresponds to 1 CPU core
-- Startup Parameter: `--gpulevel 1`
+- Startup Parameter: `-m 1`
 
 🔧 Category 3: Basic Memory Configuration (>4GB)
 
 - ​Memory Requirement: Single GPU memory greater than 4GB
 - Multi-GPU Support: ✅ Supported
 - CPU Dependency: ⚠️ Strong dependency on CPU performance
-- Startup Parameter: `--gpulevel 2`
+- Startup Parameter: `-m 2`
 - Performance Optimization: Adjust concurrent tasks via environment variable `export RUN_TASKS=n  # n × 4 must be less than GPU memory (GB)`
 
 Fix 64GB Memory Crash
@@ -35,6 +35,7 @@ Fix 64GB Memory Crash
 GPU Performance Data
 -	NVIDIA GeForce RTX 3090 : 6.5 M
 -	NVIDIA GeForce RTX 4070 : 11.8 M
+-	NVIDIA GeForce RTX 5090 : 22 M
 
 
 GPU
