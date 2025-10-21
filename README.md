@@ -1,15 +1,18 @@
 # **Neptune V2 CPU Guesser**  
 
-**CPU + GPU ​Hardware Requirements**:​
+**GPU ​Hardware Requirements**:​
 
 - ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
-- CPU: Recommended ​32 cores or more.
 - GPU: Nvidia
-
-**CPU ​Hardware Requirements**:​
-
-- ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
-- CPU: Recommended ​32 cores or more.
+  
+**Version >= 3.0.0**
+| Parameter   | Resource Allocation | VRAM Requirement Description                                 |
+| ----------- | ------------------- | ------------------------------------------------------------ |
+| **`-m 0`**  | GPU-only            | Requires **over 40GB** of VRAM                               |
+| **`-m 1`**  | GPU-only            | Requires **over 30GB** of VRAM                               |
+| **`-m 2`**  | GPU-only            | Requires **over 22.5GB** of VRAM                             |
+| **`-m 3`**  | GPU-only            | Requires **over 21.25GB** of VRAM                            |
+| **`-m 42`** | Hybrid (GPU + CPU)  | Allocates approx. **3GB** of VRAM per instance. Should be used with the `export RUN_TASKS=N`environment variable to optimize resources by setting the number of concurrent instances `N`, ensuring that `3 * N`does not exceed total VRAM. **The default value is `RUN_TASKS=3`**. This mode has higher requirements for PCIe bandwidth. |
 
 **How to Verify Hardware Compatibility**
 
@@ -42,7 +45,20 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 ### **5️⃣ USE GPU（Option）**
 
 ```bash
-./dr_neptune_prover -p stratum+tcp://neptune.drpool.io:30127 -w drpoolaccount.xxx -g 0
+# -g
+# Indexes of GPUs to use (starts from 0)
+# Specify multiple times to use multiple GPUs
+# Example: -g 0  -g 0,1,2,3
+
+# -m
+# GPU Memory: 0, 1, 2 (default: 42)
+# 0: GPU with 40GB+ memory
+# 1: GPU with 30GB+ memory
+# 2: GPU with 23GB+ memory
+# 3: GPU with 22GB+ memory
+# 42: GPU + CPU，3G * N
+
+./dr_neptune_prover -p stratum+tcp://neptune.drpool.io:30127 -w drpoolaccount.xxx -g 0,1,2,3 -m 2
 ```
 
 ---
@@ -62,13 +78,8 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 1. **Download the Miner**  
    - Get the latest `ubuntu-dr_neptune_prover-x.x.x.tar.gz` from **[Download](https://github.com/0xdrpool/neptune_v2_cpu_guesser/blob/main/download.md)**
    ```bash
-   # Ubuntu 20.04+
-   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-2.0.2.tar.gz
-   ```
-
-   ```bash
-   # Ubuntu 24.04+ avx512
-   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_24_avx512-dr_neptune_prover-2.1.0.tar.gz
+   # Ubuntu 18.04+
+   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.0.0.tar.gz
    ```
      
 3. **Extract & Prepare**  
@@ -81,7 +92,7 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
    - Edit `inner_guesser.sh` and update your **[drpool](https://drpool.io) account name**.  
 
 5. **GPU Acceleration**
-   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g 0`
+   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g 0  -m 2`
 
 7. **Start Mining**  
    ```bash
