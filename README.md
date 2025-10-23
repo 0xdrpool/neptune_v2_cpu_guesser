@@ -63,6 +63,44 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 
 ---
 
+### **⚙️ HiveOS**
+
+**New Wallet**
+
+Address input your drpool accountname
+
+<img width="596" height="616" alt="image" src="https://github.com/user-attachments/assets/8a621c28-00d9-46a8-9e41-ceca1a2d65a2" />
+
+**Add New Flight Sheet**
+
+<img width="1207" height="275" alt="image" src="https://github.com/user-attachments/assets/ec7599c7-df18-456e-a550-0066679c31d6" />
+
+**Setup Miner Config**
+
+Extra config arguments:
+- Miner name: `nptprover`
+- Installation URL: `https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-3.4.0.tar.gz`
+- Hash algorithm: `----`
+- Wallet and worker template: `%WAL%.%WORKER_NAME%`
+- Pool URL: `stratum+tcp://neptune.drpool.io:30127`
+- Extra config arguments: 
+  ```
+  # -g
+  # Indexes of GPUs to use (starts from 0)
+  # Specify multiple times to use multiple GPUs
+  # Example: -g 0  -g 0,1,2,3
+  
+  # -m
+  # GPU Memory: 0, 1, 2 (default: 42)
+  # 0: GPU with 40GB+ memory
+  # 1: GPU with 30GB+ memory
+  # 2: GPU with 23GB+ memory
+  # 3: GPU with 22GB+ memory
+  # 42: GPU + CPU，3G * N
+  ```
+
+<img width="677" height="700" alt="image" src="https://github.com/user-attachments/assets/8566fbc7-4671-4844-b7b3-6a021d46df56" />
+
 ### **⚙️ Setup on Ubuntu (v18.04+)**  
 
 1. **Get a Mining Address**
