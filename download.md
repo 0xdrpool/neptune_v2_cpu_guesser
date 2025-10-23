@@ -1,5 +1,14 @@
 # Download
 
+## V3.4.0
+1. Performance improved by 5%.​​
+2. Optimized​ the issue of ​Part1​ being recalculated due to adaptive difficulty at the same altitude.
+3. HiveOS​ version is now provided.
+
+**Ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.4.0.tar.gz
+
+**HiveOS**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-3.4.0.tar.gz
+
 ## V3.3.1
 
 Fix V3.3.0 `-m 1` Run Error
