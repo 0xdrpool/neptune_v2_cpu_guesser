@@ -101,6 +101,13 @@ Extra config arguments:
 
 <img width="677" height="700" alt="image" src="https://github.com/user-attachments/assets/8566fbc7-4671-4844-b7b3-6a021d46df56" />
 
+**View HiveOS logs**
+
+`tail -f /root/hive/miners/custom/nptprover/nptprover.log -n 100`
+
+<img width="1198" height="849" alt="image" src="https://github.com/user-attachments/assets/8370bb70-52f0-4124-9e9c-fccf6b3c4c2c" />
+
+
 ### **⚙️ Setup on Ubuntu (v18.04+)**  
 
 1. **Get a Mining Address**
