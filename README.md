@@ -58,6 +58,8 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 # 3: GPU with 22GB+ memory
 # 42: GPU + CPU，3G * N
 
+# -t N It only works with the -m 42option.
+
 ./dr_neptune_prover -p stratum+tcp://neptune.drpool.io:30127 -w drpoolaccount.xxx -g 0,1,2,3 -m 2
 ```
 
@@ -97,6 +99,8 @@ Extra config arguments:
   # 2: GPU with 23GB+ memory
   # 3: GPU with 22GB+ memory
   # 42: GPU + CPU，3G * N
+
+  # -t N It only works with the -m 42option.
   ```
 
 <img width="677" height="700" alt="image" src="https://github.com/user-attachments/assets/8566fbc7-4671-4844-b7b3-6a021d46df56" />
