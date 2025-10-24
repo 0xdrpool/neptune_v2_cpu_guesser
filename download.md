@@ -6,7 +6,7 @@ Version Release Notes
 
 1.  Minor performance improvements. 
 2.  Part1 shows significantly improved performance in terms of processing time. 
-3.  HiveOS version now supports the -t option for Task configuration, e.g. Extra config arguments:  `-g -m 42 -t 4`. 
+3.  HiveOS version now supports the -t option for Task configuration, e.g. Extra config arguments:  `-g 0 -m 42 -t 4`. 
 
 **Ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.4.1.tar.gz
 
