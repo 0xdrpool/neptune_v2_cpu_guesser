@@ -1,5 +1,16 @@
 # Download
 
+## V3.5.
+
+Version Release Notes
+
+1.  Performance improved by 5～10%.​​
+2.  Upgrade the mining pool interaction protocol to enhance data verification security. 
+
+**Ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-3.5.0.tar.gz
+
+**HiveOS**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-3.5.0.tar.gz
+
 ## V3.4.2
 
 Version Release Notes
