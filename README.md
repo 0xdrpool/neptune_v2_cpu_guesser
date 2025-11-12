@@ -1,5 +1,9 @@
 # **Neptune V2 CPU Guesser**  
 
+# ⚠️ All miners must complete the upgrade V4.x.x by block height 15000。
+# ⚠️ All miners must complete the upgrade V4.x.x by block height 15000。
+# ⚠️ All miners must complete the upgrade V4.x.x by block height 15000。
+
 **GPU ​Hardware Requirements**:​
 
 - ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
