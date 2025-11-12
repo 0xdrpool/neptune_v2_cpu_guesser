@@ -9,7 +9,7 @@
 - ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
 - GPU: Nvidia
   
-**Version >= 3.0.0**
+**Version >= 4.0.0**
 | Parameter   | Resource Allocation | VRAM Requirement Description                                 |
 | ----------- | ------------------- | ------------------------------------------------------------ |
 | **`-m 0`**  | GPU-only            | Requires **over 40GB** of VRAM                               |
