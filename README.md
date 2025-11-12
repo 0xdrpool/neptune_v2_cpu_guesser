@@ -12,7 +12,7 @@
 | **`-m 1`**  | GPU-only            | Requires **over 30GB** of VRAM                               |
 | **`-m 2`**  | GPU-only            | Requires **over 22.5GB** of VRAM                             |
 | **`-m 3`**  | GPU-only            | Requires **over 21.25GB** of VRAM                            |
-| **`-m 42`** | Hybrid (GPU + CPU)  | Allocates approx. **3GB** of VRAM per instance. Should be used with the `export RUN_TASKS=N`environment variable to optimize resources by setting the number of concurrent instances `N`, ensuring that `3 * N`does not exceed total VRAM. **The default value is `RUN_TASKS=3`**. This mode has higher requirements for PCIe bandwidth. |
+| **`-m 42`** | Hybrid (GPU + CPU)  | Allocates approx. **3GB** of VRAM per instance. Should be used with the `-t N` by setting the number of concurrent instances `N`, ensuring that `3 * N`does not exceed total VRAM. **The default value is `N=3`**.|
 
 **How to Verify Hardware Compatibility**
 
