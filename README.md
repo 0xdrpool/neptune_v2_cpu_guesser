@@ -1,15 +1,15 @@
-# **Neptune V2 CPU Guesser**  
+# **Neptune V2 Guesser**  
 
-# ⚠️ All miners must complete the upgrade V4.x.x by block height 15000。
-# ⚠️ All miners must complete the upgrade V4.x.x by block height 15000。
-# ⚠️ All miners must complete the upgrade V4.x.x by block height 15000。
+# ⚠️ All miners must complete the upgrade V5.x.x by block height 38000。
+# ⚠️ All miners must complete the upgrade V5.x.x by block height 38000。
+# ⚠️ All miners must complete the upgrade V5.x.x by block height 38000。
 
 **GPU ​Hardware Requirements**:​
 
 - ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
 - GPU: Nvidia
   
-**Version >= 4.0.0**
+**Version >= 5.0.0**
 | Parameter   | Resource Allocation | VRAM Requirement Description                                 |
 | ----------- | ------------------- | ------------------------------------------------------------ |
 | **`-m 0`**  | GPU-only            | Requires **over 40GB** of VRAM                               |
@@ -85,7 +85,7 @@ Address input your drpool accountname
 
 Extra config arguments:
 - Miner name: `nptprover`
-- Installation URL: `https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-4.0.0.tar.gz`
+- Installation URL: `https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-5.0.0.tar.gz`
 - Hash algorithm: `----`
 - Wallet and worker template: `%WAL%.%WORKER_NAME%`
 - Pool URL: `stratum+tcp://neptune.drpool.io:30127`
@@ -132,7 +132,7 @@ Extra config arguments:
    - Get the latest `ubuntu-dr_neptune_prover-x.x.x.tar.gz` from **[Download](https://github.com/0xdrpool/neptune_v2_cpu_guesser/blob/main/download.md)**
    ```bash
    # Ubuntu 18.04+
-   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-4.0.0.tar.gz
+   wget https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-5.0.0.tar.gz
    ```
      
 3. **Extract & Prepare**  
