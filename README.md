@@ -1,23 +1,5 @@
 # **Neptune V2 Guesser**  
 
-# ⚠️ All miners must complete the upgrade V5.x.x by block height 38000。
-# ⚠️ All miners must complete the upgrade V5.x.x by block height 38000。
-# ⚠️ All miners must complete the upgrade V5.x.x by block height 38000。
-
-**GPU ​Hardware Requirements**:​
-
-- ​RAM: Minimum ​45GB​ (the software requires ​40GB​ to run).
-- GPU: Nvidia
-  
-**Version >= 5.0.0**
-| Parameter   | Resource Allocation | VRAM Requirement Description                                 |
-| ----------- | ------------------- | ------------------------------------------------------------ |
-| **`-m 0`**  | GPU-only            | Requires **over 40GB** of VRAM                               |
-| **`-m 1`**  | GPU-only            | Requires **over 30GB** of VRAM                               |
-| **`-m 2`**  | GPU-only            | Requires **over 22.5GB** of VRAM                             |
-| **`-m 3`**  | GPU-only            | Requires **over 21.25GB** of VRAM                            |
-| **`-m 42`** | Hybrid (GPU + CPU)  | Allocates approx. **3GB** of VRAM per instance. Should be used with the `-t N` by setting the number of concurrent instances `N`, ensuring that `3 * N`does not exceed total VRAM. **The default value is `N=3`**.|
-
 **How to Verify Hardware Compatibility**
 
 Check the log for the entry: ​​"guess preprocess use time"​.
@@ -54,17 +36,7 @@ If this time exceeds ​120 seconds, your hardware ​may not meet the requireme
 # Specify multiple times to use multiple GPUs
 # Example: -g 0  -g 0,1,2,3
 
-# -m
-# GPU Memory: 0, 1, 2 (default: 42)
-# 0: GPU with 40GB+ memory
-# 1: GPU with 30GB+ memory
-# 2: GPU with 23GB+ memory
-# 3: GPU with 22GB+ memory
-# 42: GPU + CPU，3G * N
-
-# -t N It only works with the -m 42option.
-
-./dr_neptune_prover -p stratum+tcp://neptune.drpool.io:30127 -w drpoolaccount.xxx -g 0,1,2,3 -m 2
+./dr_neptune_prover -p stratum+tcp://neptune.drpool.io:30127 -w drpoolaccount.xxx -g 0,1,2,3
 ```
 
 ---
@@ -95,16 +67,6 @@ Extra config arguments:
   # Indexes of GPUs to use (starts from 0)
   # Specify multiple times to use multiple GPUs
   # Example: -g 0  -g 0,1,2,3
-  
-  # -m
-  # GPU Memory: 0, 1, 2 (default: 42)
-  # 0: GPU with 40GB+ memory
-  # 1: GPU with 30GB+ memory
-  # 2: GPU with 23GB+ memory
-  # 3: GPU with 22GB+ memory
-  # 42: GPU + CPU，3G * N
-
-  # -t N It only works with the -m 42option.
   ```
 
 <img width="677" height="700" alt="image" src="https://github.com/user-attachments/assets/8566fbc7-4671-4844-b7b3-6a021d46df56" />
@@ -145,7 +107,7 @@ Extra config arguments:
    - Edit `inner_guesser.sh` and update your **[drpool](https://drpool.io) account name**.  
 
 5. **GPU Acceleration**
-   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g 0  -m 2`
+   - Edit `inner_guesser.sh` and update `./dr_neptune_prover --pool stratum+tcp://neptune.drpool.io:30127 --worker $accountname -g 0`
 
 7. **Start Mining**  
    ```bash
