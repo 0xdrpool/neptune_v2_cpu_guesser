@@ -4,7 +4,7 @@
 
 Version Release Notes
 
-Delivering up to 20% overall performance improvement compared with V6.1.0。
+Delivering up to 20% overall performance improvement compared with V6.0.0。
 
 RTX 3080
 - Hashrate of V6.0.0: 81.2M/s
