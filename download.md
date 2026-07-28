@@ -1,5 +1,21 @@
 # Download
 
+## V6.1.0
+
+Version Release Notes
+
+Delivering up to 20% overall performance improvement compared with V6.1.0。
+
+RTX 3080
+- Hashrate of V6.0.0: 81.2M/s
+- Hashrate of V6.1.0: 97.86M/s
+
+  
+**Ubuntu**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/ubuntu_20-dr_neptune_prover-6.1.0.tar.gz
+
+**HiveOS**: https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-6.1.0.tar.gz
+
+
 ## V6.0.0
 
 Version Release Notes
